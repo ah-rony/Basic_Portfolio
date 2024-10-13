@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background: #222;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-2{
+    width: 1140px;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.Education-title,.Expertise-title,.Contact-title{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.line {
+    height: 2px;
+    width: 6.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.inner-line {
+    height: 2px;
+    width: 4rem;
+    background-color: #365cf4;
+    border-radius: 5px;
+}
+
+
+
+/* ----Header Part Start------ */
+
+.Header-area{
+    top: 0;
+    position: sticky;
+    backdrop-filter: blur(6px);
+    background-color: transparent;
+    border-bottom: 1px solid #555;
+    z-index: 999;
+}
+.Header{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    font-weight: 800;
+    font-size: 24px;
+    color: #fff;
+}
+
+.menu{
+    width: 60vw;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul a{
+    margin: 0 30px;
+    color: #fff;
+}
+
+
+
+
+/* ----About Part Start------ */
+
+.About-area{
+    padding-top: 100px;
+    margin: 0 auto;
+}
+.About{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+}
+
+.About-banner{
+    border: 2px solid #555;
+    box-shadow: #555;
+    transition: transform .3s ease;
+}
+
+.About-banner:hover{
+    transform: translateY(-1rem);
+}
+.About-text{
+    text-align: justify;
+    color: #fff;
+}
+
+.About-text h1{
+    font-size: 38px;
+    color: #555;
+    padding-bottom: 20px;
+}
+
+.About-text h1 span{
+    font-size: 54px;
+    color: #007BFF;
+}
+
+.About-text p{
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+
+
+
+
+/* ----Education Part Start------ */
+
+
+.Education-area{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+.Education-details, .Expertise-details{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border: 3px solid #444;
+    border-radius: 10px;
+    transition: transform .3s ease;
+    
+}
+
+.Education-details:hover, .Expertise-details:hover{
+    transform: translateY(-1rem);
+}
+.Edu-img,.Exp-img{
+    padding: 11px 14px 11px 11px;
+    background: #444;
+    max-width: 100%; 
+    height: auto; 
+    object-fit: contain;
+}
+
+
+.Edu-text,.Exp-text{
+    line-height: 20px;
+}
+.Edu-text,.Exp-text>*:first-child{
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.Edu-text>*:not(:first-child){
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Education-banner,.Expertise-banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+
+
+
+/* ----Contact Part Start------ */
+
+
+.Contact-area {
+    padding-top: 100px;
+}
+
+
+.Contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+
+
+.Contact-form {
+    border: 2px solid #333;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.Contact-form h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+
+
+input, textarea {
+    border: none;
+    margin: 4px 0;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+
+.Contact-form button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.Contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.Contact-text{
+    text-align: center;
+}
+
+.Contact-text h2{
+    font-size: 36px;
+    color: #555;
+}
+
+.Contact-text p{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+}
+
+.contact-socials ul{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.contact-socials ul li a i{
+    color: rgb(19, 83, 247);
+    transition: transform .3s ease;
+}
+
+.contact-socials ul li a i:hover{
+    color: rgb(56, 123, 247);
+    transform: translateY(4px);
+}
+
+
+
+
+
+/* ----Footer Part Start------ */
+
+
+.Footer-area{
+    padding-top: 100px;
+}
+.footer-copyright{
+    color: #444;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px dashed #333;
+}
+
+
+
+
+/* -----Responsive adjustments ----- */
+
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .container-2 {
+        width: 100%;
+    }
+
+    .menu ul a {
+        margin: 0 20px;
+    }
+
+    .About {
+        flex-direction: column;
+    }
+
+    .About-text h1 {
+        font-size: 34px;
+    }
+
+    .About-text h1 span {
+        font-size: 42px;
+    }
+
+    .About-text p {
+        font-size: 16px;
+    }
+
+    .Education-details, .Expertise-details {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .Edu-img, .Exp-img {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 50vw;
+    }
+
+    .menu {
+        width: 50vw;
+        font-size: 12px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .About {
+        padding-top: 50px;
+    }
+
+    .About-text h1 {
+        font-size: 28px;
+    }
+
+    .About-text h1 span {
+        font-size: 36px;
+    }
+
+    .Education-banner, .Expertise-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .Contact {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .Contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 20px;
+    }
+
+    .menu ul a {
+        margin: 0 10px;
+        font-size: 12px;
+    }
+
+    .About-text h1 {
+        font-size: 24px;
+    }
+
+    .About-text h1 span {
+        font-size: 30px;
+    }
+
+    .About-text p {
+        font-size: 14px;
+    }
+
+    .Edu-text, .Exp-text {
+        font-size: 14px;
+    }
+
+    .Contact-form {
+        padding: 10px;
+    }
+
+    .Contact-form h2 {
+        padding-bottom: 20px;
+    }
+
+    .Contact-text h2 {
+        font-size: 28px;
+    }
+
+    .Contact-text p {
+        font-size: 16px;
+    }
+
+    .contact-socials ul {
+        font-size: 20px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+    }
+}
